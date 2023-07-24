@@ -1,0 +1,1 @@
+This script changes paragraph text dynamically depending on the time of day.
