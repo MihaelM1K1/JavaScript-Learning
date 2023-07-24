@@ -16,5 +16,5 @@ function inflationCalculator(){
     REZULTAT: ${rezultat}
     `)
     rezultatPrikaz.innerText = `
-    ${money}€ ce za ${years} godina vrijediti ${rezultat.toFixed(2)}€.`
+    ${money}€ vrijedi kao ${rezultat.toFixed(2)}€ za  ${years} godina.`
 }
