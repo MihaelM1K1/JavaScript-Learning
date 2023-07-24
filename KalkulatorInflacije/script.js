@@ -2,19 +2,19 @@ function inflationCalculator(){
     let inflationRate = parseFloat(document.querySelector('#inflationRate').value)
     let money = parseFloat(document.querySelector(`#money`).value)
     let years = parseFloat(document.querySelector(`#years`).value)
-    let rezultat = money +(money * (inflationRate/100))
-    let rezultatPrikaz = document.querySelector(`#rezultat`)
+    let result = money +(money * (inflationRate/100))
+    let displayResult = document.querySelector(`#result`)
     
     for (let i = 1; i < years; i++){
-        rezultat += rezultat * (inflationRate/100);
+        result += result * (inflationRate/100);
     }
 
     console.log(`
-    STOPA INFLACIJE: ${inflationRate}%
-    PARE: ${money}
-    GODINE: ${years}
-    REZULTAT: ${rezultat}
+    INFLATION RATE: ${inflationRate}%
+    MONEY: ${money}
+    YEARS: ${years}
+    RESULT: ${result}
     `)
-    rezultatPrikaz.innerText = `
-    ${money}€ vrijedi kao ${rezultat.toFixed(2)}€ za  ${years} godina.`
+    displayResult.innerText = `
+    ${money}€ today is worth the same as ${result.toFixed(2)}€ in ${years} years.`
 }
