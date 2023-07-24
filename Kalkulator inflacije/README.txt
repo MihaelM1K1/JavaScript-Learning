@@ -1,0 +1,1 @@
+This script calculates inflation using inflation rate, amount of money and amount of years that are inputted by user.
