@@ -11,7 +11,7 @@ function newElement(){
     ul.appendChild(li)
     closebutton.innerText= `X`
     closebutton.classList= 'close'
-    closebutton.setAttribute("id", `lispan${linum}`)
+    closebutton.setAttribute("id", `lispan${linum-1}`)
     closebutton.setAttribute("onclick", "liDelete(id)")
     li.appendChild(closebutton)
 
