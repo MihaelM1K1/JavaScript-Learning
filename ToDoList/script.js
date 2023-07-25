@@ -6,10 +6,12 @@ function newElement(){
     li.innerText= textInput.value
     li.classList='todo-li'
     li.setAttribute("id",`li${linum++}`)
+    li.setAttribute("onclick",`check(id)`)
     ul.appendChild(li)
 
     textInput.value=''
 }
-function completed(id){
-
+function check(id){
+    liItemCheck=document.querySelector(`#${id}`)
+    liItemCheck.classList.toggle("checked")
 }
