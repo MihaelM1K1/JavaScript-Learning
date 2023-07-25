@@ -1,5 +1,3 @@
 This is a simple to-do list.
 
-Project is unfinished.
-
-Link to see the completed project will be here when I finish it.
+You can see the completed project here: https://mihaelm1k1.github.io/JavaScript-Early-Projects/ToDoList/index.html
