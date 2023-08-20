@@ -15,7 +15,7 @@ else if (17>=hours){
 else if (20>=hours){
     textHTML.innerText = `Good evening`
 }
-if(21<=hours){
+else if(21<=hours){
     textHTML.innerText = `Good night`
 }
 ;
