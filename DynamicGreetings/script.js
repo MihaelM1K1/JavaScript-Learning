@@ -3,7 +3,7 @@ const hours = now.getHours();
 
 textHTML = document.querySelector('#Greeting')
 
-if (3>=hours){
+if(21<=hours || 3>=hours){
     textHTML.innerText = `Good night`
 }
 else if (12>=hours){
@@ -15,7 +15,3 @@ else if (17>=hours){
 else if (20>=hours){
     textHTML.innerText = `Good evening`
 }
-else if(21<=hours){
-    textHTML.innerText = `Good night`
-}
-;
